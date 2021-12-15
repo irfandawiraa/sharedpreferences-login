@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString();
                 SharedPreferences preferences = getSharedPreferences("MYPREFS", MODE_PRIVATE);
 
-                String userDetails = preferences.getString(user + password + "data","No information on that user.");
+                String userDetails = preferences.getString(user + password + "data","User not found.");
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("display",userDetails);
                 editor.commit();

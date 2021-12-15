@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pab_w9">
+
         <activity
             android:name="com.rab.pab_w9.MainActivity"
             android:exported="true"
@@ -19,10 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.rab.pab_w9.DisplayScreen"></activity>
+
+        <activity
+            android:name="com.rab.pab_w9.DisplayScreen"
+            android:label="Welcome">
+        </activity>
+
         <activity
             android:name="com.rab.pab_w9.Register"
-            android:label="Login"></activity>
+            android:parentActivityName=".MainActivity"
+            android:label="Register">
+        </activity>
     </application>
 
 </manifest>
